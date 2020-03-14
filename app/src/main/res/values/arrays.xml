@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_drawer_items">
+        <item>Text Scramble Input</item>
+        <item>Manual Color Input</item>
+    </string-array>
+
+    <string-array name="cube_capture_sides">
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>White</item>
+    </string-array>
+
+</resources>

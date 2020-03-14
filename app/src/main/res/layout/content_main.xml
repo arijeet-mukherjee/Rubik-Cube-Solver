@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:id="@+id/RL"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/custom"
+    tools:showIn="@layout/activity_main"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adView"
+        android:layout_alignParentBottom="false"
+
+
+
+        android:background="@drawable/cubweback"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:layout_margin="15dp"
+        style="@style/btnStyleOrange"
+        android:id="@+id/scanBTN" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Scan"
+        android:id="@+id/finishscanBTN"
+        android:layout_alignParentEnd="true"
+        style="@style/btnStyleOrange"
+        android:layout_margin="15dp"
+        android:layout_alignParentStart="false" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/scanBTN"
+
+
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/LL"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="63dp"
+        android:id="@+id/LLPP"
+
+        >
+        <ImageButton
+            android:layout_width="60dp"
+            android:id="@+id/btnLeftmove"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:background="@drawable/newbackword"
+
+            android:layout_marginEnd="8dp"
+            android:focusable="true" />
+
+        <com.ohoussein.playpause.PlayPauseView
+            android:id="@+id/play_pause_view"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:hapticFeedbackEnabled="true"
+            app:fill_color="#181717"
+            app:pause_bg="#00a2ed"
+            app:play_bg="#EB9CDEF3"
+            android:focusable="true" />
+        <ImageButton
+            android:layout_width="60dp"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/btnPause"
+            android:focusable="true"
+            android:background="@drawable/pausedesign"
+            android:layout_marginStart="8dp"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/btnRightmove"
+            android:focusable="true"
+            android:background="@drawable/newforword"
+            android:layout_marginStart="8dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

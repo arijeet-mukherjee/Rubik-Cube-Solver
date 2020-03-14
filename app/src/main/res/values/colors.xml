@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#015266</color>
+    <color name="colorAccent">#4640ff</color>
+    <color name="gradient_color_1">#0FB0C1</color>
+    <color name="gradient_color_2">#001624</color>
+    <color name="bg">#015266</color>
+
+    <color name="textColorPrimary">#F02929</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="textColorSecondary2">#D8D1D1</color>
+    <color name="background_material_light">#faf7e9</color>
+
+    <color name="cubeBlue">#03A9F4</color>
+    <color name="cubeGreen">#00C853</color>
+    <color name="cubeRed">#E70000</color>
+    <color name="cubeOrange">#FF9100</color>
+    <color name="cubeWhite">#FFFEFEFE</color>
+    <color name="cubeYellow">#FFD600</color>
+
+    <color name="gold_dark">#946335</color>
+    <color name="gold_med">#ab804b</color>
+    <color name="gold">#cea774</color>
+    <color name="gold_light">#edd3b2</color>
+    <color name="custom">#8DACFF</color>
+</resources>

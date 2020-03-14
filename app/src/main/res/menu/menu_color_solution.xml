@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_reset"
+        android:icon="@drawable/ic_replay_black"
+        android:title="@string/reset_action"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_edit_scramble"
+        android:icon="@drawable/ic_mode_edit_black"
+        android:title="@string/edit_action"
+        app:showAsAction="ifRoom" />
+
+
+    <!-- Settings, should always be in the overflow
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+       -->
+</menu>

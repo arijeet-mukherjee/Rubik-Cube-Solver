@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".manual.CaptureCubeActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/white"
+        android:background="@color/gradient_color_1"
+
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"  />
+
+    <FrameLayout
+        android:id="@+id/camera_preview_container"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <Spinner
+            android:id="@+id/side_options"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@null"
+            android:paddingRight="4dp" />
+
+        <ImageView
+            android:id="@+id/take_picture"
+            android:contentDescription="Take a Picture"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_photo_camera_white" />
+
+        <Button
+            android:id="@+id/solve_cube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solve"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"/>
+
+    </RelativeLayout>
+
+
+    <SurfaceView
+        android:layout_above="@id/bottom_bar"
+        android:id="@+id/grid_view"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/white"
+            android:clickable="true">
+
+            <LinearLayout
+                android:id="@+id/instructions_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Instructions"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/toggle_instructions"
+                    android:gravity="center"
+                    android:src="@drawable/ic_arrow_drop_down_black"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:background="@android:color/white"
+            android:id="@+id/instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:lineSpacingExtra="6dp"
+            android:visibility="gone"
+            android:padding="16dp"
+            android:text="@string/instructions"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

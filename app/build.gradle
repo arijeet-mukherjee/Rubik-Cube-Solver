@@ -1,0 +1,64 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.gamingwe.cubewerubiksolver"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 3
+        versionName "3.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                onesignal_app_id: 'd032996f-c33f-448c-8b50-118d9a7c86de',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    testImplementation 'junit:junit:4.12'
+    implementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    implementation "androidx.gridlayout:gridlayout:1.0.0"
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'petrov.kristiyan:colorpicker-library:1.1.10'
+    implementation 'com.plattysoft.leonids:LeonidsLib:1.3.2'
+    implementation 'com.gauravbhola.ripplepulsebackground:library:1.0.0'
+    def dynamicanimation_version = "1.0.0"
+    implementation "androidx.dynamicanimation:dynamicanimation:$dynamicanimation_version"
+
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'com.onesignal:OneSignal:[3.11.2, 3.99.99]'
+
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.klinkerapps:floating-tutorial:1.1.0'
+    implementation 'com.github.deano2390:MaterialShowcaseView:1.3.4'
+    implementation 'com.github.ohoussein.playpauseview:playpauseview:1.0.2'
+    implementation 'androidx.mediarouter:mediarouter:1.1.0'
+
+
+}

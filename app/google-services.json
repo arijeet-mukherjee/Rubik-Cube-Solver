@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "717159575141",
+    "firebase_url": "https://cubewerubikssolver.firebaseio.com",
+    "project_id": "cubewerubikssolver",
+    "storage_bucket": "cubewerubikssolver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717159575141:android:2cc5fe2d48eb84ead3a08c",
+        "android_client_info": {
+          "package_name": "com.gamingwe.cubewerubiksolver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717159575141-v321h0tkj7qojl38737e6bbhb21cgmdi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamingwe.cubewerubiksolver",
+            "certificate_hash": "5c4cbe6250899daf67440fd64467852225c9148e"
+          }
+        },
+        {
+          "client_id": "717159575141-iegt8lvbos7behgf3v6m9ehooaul3s7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHnB2Mi3kRTME9ac9QALFNIsGsRgeaeQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717159575141-iegt8lvbos7behgf3v6m9ehooaul3s7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

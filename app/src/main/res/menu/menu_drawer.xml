@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/color_input"
+            android:icon="@drawable/ic_brush_white"
+            android:title="Color Input" />
+        <item
+            android:id="@+id/text_scramble"
+            android:icon="@drawable/ic_text_field_white"
+            android:title="Text Scramble Input" />
+
+
+
+        <item
+            android:id="@+id/camera_input"
+            android:icon="@drawable/ic_photo_camera_white"
+            android:title="Camera Input" />
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="home"/>
+    </group>
+
+
+</menu>
